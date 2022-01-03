@@ -16,7 +16,6 @@ install node using `nvm install --lts` assuming you are running in Mac OS
 - `react-icons` for showing icons
 - `use-lodash-debounce` for input debouncing
 
-In the project directory, you can run:
 
 ## Running Locally
 In a terminal,
