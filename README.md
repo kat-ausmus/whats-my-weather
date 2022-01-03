@@ -19,7 +19,7 @@ install node using `nvm install --lts` assuming you are running in Mac OS
 
 ## Running Locally
 In a terminal,
-- clone git repo `git clone https://github.com/kat-ausmus/whats-my-weather.git`
+- clone git repo `git clone https://github.com/kat-ausmus/whats-my-weather.git` or `git clone git://github.com/kat-ausmus/whats-my-weather.git`
 - cd to `whats-my-weather` folder and then install all dependencies by typing `npm install`
 - start application by typing `npm start`
 
