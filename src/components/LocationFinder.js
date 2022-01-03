@@ -18,6 +18,7 @@ const LocationFinder = (props) => {
       placeholder='Enter City, State or Enter Zip Code'
       allowClear={true}
       autoFocus={true}
+      defaultActiveFirstOption={true}
     >
       {currState.searchResults.map((location) => (
         <Option key={location.key} value={format(location)}>

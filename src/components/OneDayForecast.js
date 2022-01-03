@@ -8,7 +8,7 @@ const gridStyle = {
   width: '20%',
   textAlign: 'center',
 };
-export const OneDayForecasts = (props) => {
+export const OneDayForecast = (props) => {
   const { day } = props;
   const dateStr = dayjs.unix(day.epochDate).format('MMM DD');
   const { lowTemperature: low, highTemperature: high } = day;

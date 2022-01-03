@@ -2,6 +2,18 @@
 
 A Simple Weather App that shows today's weather conditions and 5 day forecasts. This app is a work in progress.
 
+## How to use it
+In the text box, type either `City, State`, or `City` or `Zip code`, then pick from the drop down, if any, to see today's weather.
+
+e.g.
+
+Plano
+
+Plano, TX
+
+A list will show up when location search finds an entry.  No list will show if the location lookup returns empty. 
+
+
 ## Requirements
 `node v16`  
 

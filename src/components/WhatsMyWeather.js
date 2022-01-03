@@ -35,11 +35,11 @@ export const WhatsMyWeather = () => {
     if (locationKey) {
       const fetchData = async () => {
         try {
-          const [currentConditions, fiveDayForecasts] = await Promise.all([
+          const [currentConditions, fiveDayForecast] = await Promise.all([
             await accuweatherService.getCurrentConditions(locationKey),
             await accuweatherService.get5DayForecasts(locationKey)
           ]);
-          dispatch({ type: actions.FETCH_FORECAST, currentConditions, fiveDayForecasts });
+          dispatch({ type: actions.FETCH_FORECAST, currentConditions, fiveDayForecast });
         } catch (error) {
           throw error;
         }

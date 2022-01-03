@@ -4,7 +4,7 @@ export const initialState = {
   locationKey: '',
   selectedLocation: '',
   currentConditions: [],
-  fiveDayForecasts: {},
+  fiveDayForecast: {},
   isLoading: false,
   errMsg: ''
 };
@@ -12,7 +12,7 @@ export const initialState = {
 export const actions = {
   SEARCH: 'search',
   SELECTED: 'selected',
-  FETCH_FORECAST: 'fetchForecasts',
+  FETCH_FORECAST: 'fetchForecast',
   RESET: 'reset',
   ERROR: 'error'
 }
@@ -34,16 +34,17 @@ export const reducer = (state, action) => {
       return {
         ...state,
         locationKey,
+        searchResults: [],
         selectedLocation: value,
         isLoading: locationKey !== state.locationKey
       };
     }
     case actions.FETCH_FORECAST: {
-      const { currentConditions, fiveDayForecasts } = action;
+      const { currentConditions, fiveDayForecast } = action;
       return {
         ...state,
         currentConditions,
-        fiveDayForecasts,
+        fiveDayForecast,
         isLoading: false
       };
     }
