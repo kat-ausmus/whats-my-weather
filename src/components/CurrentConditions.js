@@ -19,13 +19,13 @@ const CurrentConditions = (props) => {
     const imageUrl = `https://developer.accuweather.com/sites/default/files/${iconName}-s.png`
     return (
       <Card>
-        <Title level={2}>{currState.selectedLocation}</Title>
+        <Title level={2} data-testid="selected-loc" >{currState.selectedLocation}</Title>
         <Text type="secondary">{currentTime}</Text>
         <Title level={4} type="secondary" className={style}>Current Conditions</Title>
-        <Title level={3} style={style}>{firstOne.conditionDescription}</Title>
+        <Title level={3} style={style} data-testid="condition-desc" >{firstOne.conditionDescription}</Title>
         <Image width={60} src={imageUrl}/>
         <Title level={4} type="secondary" style={style}>Current Temperature</Title>
-        <Title level={3} style={style}>{firstOne.temperature + '\xB0 F'}</Title>
+        <Title level={3} style={style} data-testid="condition-temp" >{firstOne.temperature + '\xB0 F'}</Title>
       </Card>
     )
   } else {

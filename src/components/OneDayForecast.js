@@ -14,11 +14,11 @@ export const OneDayForecast = (props) => {
   const { lowTemperature: low, highTemperature: high } = day;
   return (
     <Card.Grid style={gridStyle}>
-      <Text type="secondary">{dateStr}</Text>
+      <Text type='secondary' data-testid='date-str'>{dateStr}</Text>
       <Title level={5} type="secondary">High</Title>
-      <Title level={4}>{formatTemperature(high)}</Title>
+      <Title level={4} data-testid='high-temp'>{formatTemperature(high)}</Title>
       <Title level={5} type="secondary">Low </Title>
-      <Title level={4}>{formatTemperature(low)}</Title>
+      <Title level={4} data-testid='low-temp'>{formatTemperature(low)}</Title>
     </Card.Grid>
   )
 }

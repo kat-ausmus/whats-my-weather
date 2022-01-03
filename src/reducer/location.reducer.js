@@ -18,7 +18,6 @@ export const actions = {
 }
 
 export const reducer = (state, action) => {
-  console.debug('action', action);
   switch (action?.type) {
     case actions.SEARCH: {
       const { searchString, data } = action;

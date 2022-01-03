@@ -8,7 +8,7 @@ const FiveDayForecast = (props) => {
     const { headline, dailyForecasts } = currState.fiveDayForecast;
     return (
       <Card>
-        <Title level={4} type="secondary">{headline}</Title>
+        <Title level={4} data-testid='headline' type='secondary'>{headline}</Title>
         {dailyForecasts.map((day) => <OneDayForecast key={day.epochDate} day={day}/>)}
       </Card>
     )

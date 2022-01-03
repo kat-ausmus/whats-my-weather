@@ -3,7 +3,7 @@ import { planoCurrentConditionRsp } from '../mockResponse/planoCurrentConditions
 import { plano5DayForecasts } from '../mockResponse/plano5DayForecasts';
 import { getCountry, getState } from './util';
 
-export const getSearchResults = async () => {
+export const getSearchResults = () => {
   return planoCannedResponse.map((location) => ({
     city: location.LocalizedName,
     state: getState(location.AdministrativeArea),
@@ -12,7 +12,7 @@ export const getSearchResults = async () => {
   }));
 }
 
-export const getCurrentConditions = async (locationKey) => {
+export const getCurrentConditions = (locationKey) => {
   if (!locationKey) {
     return [];
   }
@@ -24,7 +24,7 @@ export const getCurrentConditions = async (locationKey) => {
   }));
 }
 
-export const get5DayWeatherForecasts = async (locationKey) => {
+export const get5DayWeatherForecasts = (locationKey) => {
   const result = []
   if (!locationKey) {
     return result;

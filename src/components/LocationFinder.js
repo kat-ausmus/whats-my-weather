@@ -6,7 +6,6 @@ const { Option } = AutoComplete;
 const format = (location) => (`${location.city}, ${location.state} ${location.country}`);
 const LocationFinder = (props) => {
   const currState = props.state
-  console.debug('Location finder render: currState', currState);
 
   return (
     <AutoComplete
@@ -19,9 +18,10 @@ const LocationFinder = (props) => {
       allowClear={true}
       autoFocus={true}
       defaultActiveFirstOption={true}
+      data-testid="autocomplete"
     >
       {currState.searchResults.map((location) => (
-        <Option key={location.key} value={format(location)}>
+        <Option data-testid={location.key} key={location.key} value={format(location)}>
           {format(location)}
         </Option>
       ))}

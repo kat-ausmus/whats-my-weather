@@ -37,9 +37,9 @@ In a terminal,
 
 In a browser, connect to `http://localhost:3000`
 
-## TODO's
-- unit tests
-- research more on AccuWeather location search, some search results are funky.
+### Unit Test
+
+Type `npm test` to run `Jest` unit test
 
 ### Researched the following Weather API but did not consider them:
  1. `darksky.net` doesn't accept new signups
