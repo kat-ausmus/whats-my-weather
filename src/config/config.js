@@ -11,7 +11,7 @@ const dev = {
 const prod = {
   ...base,
   accuWeather: {
-    apiKey: "QvmN8o5pGRpX3ZpgGKsSQHRz9kYWAt8U"
+    apiKey: "4xKlZ2kpx8EyfVsfJy67xCWZLlK8A3yT"
   }
 };
 
