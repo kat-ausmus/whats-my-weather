@@ -15,12 +15,12 @@ A list will show up when location search finds an entry.  No list will show if t
 
 
 ## Requirements
-`node v16`  
+`node v20`  
 
 install node using `nvm install --lts` assuming you are running in Mac OS
 
 ## Version
-0.1.0
+0.1.1
 
 ## Libraries
 - `antd` for UI components
